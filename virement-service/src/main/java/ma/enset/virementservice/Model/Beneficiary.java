@@ -16,4 +16,5 @@ public class Beneficiary {
 
     @Enumerated(EnumType.STRING)
     private BeneficiaryType type;
+
 }

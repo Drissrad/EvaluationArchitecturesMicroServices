@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import ma.enset.virementservice.Model.Beneficiary;
 import ma.enset.virementservice.enums.VirementType;
 
 import java.math.BigDecimal;
@@ -30,4 +31,5 @@ public class Virement {
 
     @Enumerated(EnumType.STRING)
     private VirementType type;
+    @Transient private Beneficiary beneficiary;
 }
